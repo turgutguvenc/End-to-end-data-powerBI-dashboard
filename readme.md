@@ -34,3 +34,4 @@ After creating database and its tables we import this datasets to POWER BI
 
 Data Modeling;
 ![img.png](img.png)
+<img width="1452" alt="image" src="https://github.com/turgutguvenc/End-to-end-data-powerBI-dashboard/assets/63226091/cc695ff4-bc35-41fd-92e7-f2099ff33c41">
