@@ -4,13 +4,13 @@ The first dataset is a subset of real data from the Cricket game dataset. Source
 
 
 
-I create ETL processes to get data from json files which are scrapped from ESPN website and created database which has star schema.
+I create ETL processes to get data from JSON files which are scrapped from the ESPN website and created a database that has star schema.
 
 
-Purpose of the project make cricket data  to more understandable and make easy query and analyses the data .
-Make dashboards and visulaizations to understand teams and players performance.
+The purpose of the project make cricket data more understandable and make it an easy query and analyses the data.
+Make dashboards and visualizations to understand teams' and players performance.
 
-To run this files properly you need to have PostgreSQL software in your computer.
+To run these files properly, you must have PostgreSQL software on your computer.
 
 Fact Tables ; 
 1. fact_bowling - records in the batting_summary.json file shows batting summary.
@@ -20,17 +20,17 @@ Fact Tables ;
 Dimension Tables; 
 1. match_result - records in the match_result.json file shows match results.
 
-2. players - records in the players_info.json file shows information about players.
+2. players - records in the players_info.json file show information about players.
 
-5.time - timestamps of records in songplays broken down into specific units start_time, hour, day, week, month, year, weekday
+5. time - timestamps of records in song plays broken down into specific units start_time, hour, day, week, month, year, weekday
 
 Create Tables; sql_quaries.py contains CREATE and INSERT SQL codes to create tables and insert values to tables. 
-create_tables.py by running this file it will create new database and create the necessary tables 
-NOTE: you have to modify these parts ""host=127.0.0.1 dbname=cricket user=postgres password=user"" according to your environment
+create_tables.py by running this file it will create a new database and create the necessary tables 
+NOTE: you have to modify these parts "host=127.0.0.1 dbname=cricket user=postgres password=user" according to your environment
 
-Build ETL Processes: Run etl.py develops ETL processes(reads and preprocess and insert them to table) for each table.
+Build ETL Processes: Run etl.py develops ETL processes(reads and preprocess and inserts them to the table) for each table.
 
-After creating database and its tables we import this datasets to POWER BI 
+After creating a database and its tables we import this dataset to POWER BI 
 
 Data Modeling;
 ![img.png](img.png)
